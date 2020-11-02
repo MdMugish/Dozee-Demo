@@ -1,0 +1,482 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AC7075CD254E78C500A9C35C /* Dozee_DemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC7075CC254E78C500A9C35C /* Dozee_DemoApp.swift */; };
+		AC7075CF254E78C500A9C35C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC7075CE254E78C500A9C35C /* ContentView.swift */; };
+		AC7075D1254E78C900A9C35C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC7075D0254E78C900A9C35C /* Assets.xcassets */; };
+		AC7075D4254E78C900A9C35C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC7075D3254E78C900A9C35C /* Preview Assets.xcassets */; };
+		AC7075D6254E78C900A9C35C /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC7075D5254E78C900A9C35C /* Persistence.swift */; };
+		AC7075D9254E78C900A9C35C /* Dozee_Demo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AC7075D7254E78C900A9C35C /* Dozee_Demo.xcdatamodeld */; };
+		AC7075E2254E78DB00A9C35C /* Alpha_5.json in Resources */ = {isa = PBXBuildFile; fileRef = AC7075E1254E78DB00A9C35C /* Alpha_5.json */; };
+		AC7075E9254E792B00A9C35C /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC7075E8254E792B00A9C35C /* CardView.swift */; };
+		AC7075ED254E794400A9C35C /* DashboardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC7075EC254E794400A9C35C /* DashboardViewModel.swift */; };
+		AC7075FE254EE0B700A9C35C /* Nunito-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AC7075F0254EE0B700A9C35C /* Nunito-BlackItalic.ttf */; };
+		AC7075FF254EE0B700A9C35C /* Nunito-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AC7075F1254EE0B700A9C35C /* Nunito-SemiBoldItalic.ttf */; };
+		AC707600254EE0B700A9C35C /* Nunito-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AC7075F2254EE0B700A9C35C /* Nunito-Italic.ttf */; };
+		AC707601254EE0B700A9C35C /* Nunito-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AC7075F3254EE0B700A9C35C /* Nunito-BoldItalic.ttf */; };
+		AC707602254EE0B700A9C35C /* Nunito-ExtraLightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AC7075F4254EE0B700A9C35C /* Nunito-ExtraLightItalic.ttf */; };
+		AC707603254EE0B700A9C35C /* Nunito-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AC7075F5254EE0B700A9C35C /* Nunito-Black.ttf */; };
+		AC707604254EE0B700A9C35C /* Nunito-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AC7075F6254EE0B700A9C35C /* Nunito-ExtraBoldItalic.ttf */; };
+		AC707605254EE0B700A9C35C /* Nunito-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AC7075F7254EE0B700A9C35C /* Nunito-Regular.ttf */; };
+		AC707606254EE0B700A9C35C /* Nunito-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AC7075F8254EE0B700A9C35C /* Nunito-LightItalic.ttf */; };
+		AC707607254EE0B700A9C35C /* Nunito-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AC7075F9254EE0B700A9C35C /* Nunito-Bold.ttf */; };
+		AC707608254EE0B700A9C35C /* Nunito-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AC7075FA254EE0B700A9C35C /* Nunito-ExtraBold.ttf */; };
+		AC707609254EE0B700A9C35C /* Nunito-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AC7075FB254EE0B700A9C35C /* Nunito-ExtraLight.ttf */; };
+		AC70760A254EE0B700A9C35C /* Nunito-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AC7075FC254EE0B700A9C35C /* Nunito-SemiBold.ttf */; };
+		AC70760B254EE0B700A9C35C /* Nunito-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AC7075FD254EE0B700A9C35C /* Nunito-Light.ttf */; };
+		AC70760E254EF14700A9C35C /* Dashboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC70760D254EF14700A9C35C /* Dashboard.swift */; };
+		AC707611254F200900A9C35C /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC707610254F200900A9C35C /* ProfileView.swift */; };
+		AC707614254F257800A9C35C /* CategoryPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC707613254F257800A9C35C /* CategoryPickerView.swift */; };
+		AC707617254F724B00A9C35C /* CustomCalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC707616254F724A00A9C35C /* CustomCalendarView.swift */; };
+		ACF38BDB254FA643004C74D1 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF38BDA254FA643004C74D1 /* Data.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		AC7075C9254E78C500A9C35C /* Dozee Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Dozee Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC7075CC254E78C500A9C35C /* Dozee_DemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dozee_DemoApp.swift; sourceTree = "<group>"; };
+		AC7075CE254E78C500A9C35C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		AC7075D0254E78C900A9C35C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AC7075D3254E78C900A9C35C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		AC7075D5254E78C900A9C35C /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		AC7075D8254E78C900A9C35C /* Dozee_Demo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Dozee_Demo.xcdatamodel; sourceTree = "<group>"; };
+		AC7075DA254E78C900A9C35C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AC7075E1254E78DB00A9C35C /* Alpha_5.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Alpha_5.json; sourceTree = "<group>"; };
+		AC7075E8254E792B00A9C35C /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		AC7075EC254E794400A9C35C /* DashboardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewModel.swift; sourceTree = "<group>"; };
+		AC7075F0254EE0B700A9C35C /* Nunito-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-BlackItalic.ttf"; sourceTree = "<group>"; };
+		AC7075F1254EE0B700A9C35C /* Nunito-SemiBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
+		AC7075F2254EE0B700A9C35C /* Nunito-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-Italic.ttf"; sourceTree = "<group>"; };
+		AC7075F3254EE0B700A9C35C /* Nunito-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-BoldItalic.ttf"; sourceTree = "<group>"; };
+		AC7075F4254EE0B700A9C35C /* Nunito-ExtraLightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-ExtraLightItalic.ttf"; sourceTree = "<group>"; };
+		AC7075F5254EE0B700A9C35C /* Nunito-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-Black.ttf"; sourceTree = "<group>"; };
+		AC7075F6254EE0B700A9C35C /* Nunito-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
+		AC7075F7254EE0B700A9C35C /* Nunito-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-Regular.ttf"; sourceTree = "<group>"; };
+		AC7075F8254EE0B700A9C35C /* Nunito-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-LightItalic.ttf"; sourceTree = "<group>"; };
+		AC7075F9254EE0B700A9C35C /* Nunito-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-Bold.ttf"; sourceTree = "<group>"; };
+		AC7075FA254EE0B700A9C35C /* Nunito-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-ExtraBold.ttf"; sourceTree = "<group>"; };
+		AC7075FB254EE0B700A9C35C /* Nunito-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-ExtraLight.ttf"; sourceTree = "<group>"; };
+		AC7075FC254EE0B700A9C35C /* Nunito-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-SemiBold.ttf"; sourceTree = "<group>"; };
+		AC7075FD254EE0B700A9C35C /* Nunito-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-Light.ttf"; sourceTree = "<group>"; };
+		AC70760D254EF14700A9C35C /* Dashboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dashboard.swift; sourceTree = "<group>"; };
+		AC707610254F200900A9C35C /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		AC707613254F257800A9C35C /* CategoryPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryPickerView.swift; sourceTree = "<group>"; };
+		AC707616254F724A00A9C35C /* CustomCalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCalendarView.swift; sourceTree = "<group>"; };
+		ACF38BDA254FA643004C74D1 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AC7075C6254E78C500A9C35C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AC7075C0254E78C500A9C35C = {
+			isa = PBXGroup;
+			children = (
+				AC7075CB254E78C500A9C35C /* Dozee Demo */,
+				AC7075CA254E78C500A9C35C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AC7075CA254E78C500A9C35C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AC7075C9254E78C500A9C35C /* Dozee Demo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AC7075CB254E78C500A9C35C /* Dozee Demo */ = {
+			isa = PBXGroup;
+			children = (
+				AC7075EF254EE01C00A9C35C /* Font */,
+				AC7075E7254E791300A9C35C /* Repo */,
+				AC7075E6254E790000A9C35C /* Model */,
+				AC7075E5254E78FB00A9C35C /* ViewModel */,
+				AC7075E4254E78F600A9C35C /* View */,
+				AC7075CC254E78C500A9C35C /* Dozee_DemoApp.swift */,
+				AC7075CE254E78C500A9C35C /* ContentView.swift */,
+				AC7075D0254E78C900A9C35C /* Assets.xcassets */,
+				AC7075D5254E78C900A9C35C /* Persistence.swift */,
+				AC7075DA254E78C900A9C35C /* Info.plist */,
+				AC7075D7254E78C900A9C35C /* Dozee_Demo.xcdatamodeld */,
+				AC7075D2254E78C900A9C35C /* Preview Content */,
+			);
+			path = "Dozee Demo";
+			sourceTree = "<group>";
+		};
+		AC7075D2254E78C900A9C35C /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				AC7075D3254E78C900A9C35C /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		AC7075E4254E78F600A9C35C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AC7075E8254E792B00A9C35C /* CardView.swift */,
+				AC70760D254EF14700A9C35C /* Dashboard.swift */,
+				AC707610254F200900A9C35C /* ProfileView.swift */,
+				AC707613254F257800A9C35C /* CategoryPickerView.swift */,
+				AC707616254F724A00A9C35C /* CustomCalendarView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		AC7075E5254E78FB00A9C35C /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				AC7075EC254E794400A9C35C /* DashboardViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		AC7075E6254E790000A9C35C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				ACF38BDA254FA643004C74D1 /* Data.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		AC7075E7254E791300A9C35C /* Repo */ = {
+			isa = PBXGroup;
+			children = (
+				AC7075E1254E78DB00A9C35C /* Alpha_5.json */,
+			);
+			path = Repo;
+			sourceTree = "<group>";
+		};
+		AC7075EF254EE01C00A9C35C /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				AC7075F5254EE0B700A9C35C /* Nunito-Black.ttf */,
+				AC7075F0254EE0B700A9C35C /* Nunito-BlackItalic.ttf */,
+				AC7075F9254EE0B700A9C35C /* Nunito-Bold.ttf */,
+				AC7075F3254EE0B700A9C35C /* Nunito-BoldItalic.ttf */,
+				AC7075FA254EE0B700A9C35C /* Nunito-ExtraBold.ttf */,
+				AC7075F6254EE0B700A9C35C /* Nunito-ExtraBoldItalic.ttf */,
+				AC7075FB254EE0B700A9C35C /* Nunito-ExtraLight.ttf */,
+				AC7075F4254EE0B700A9C35C /* Nunito-ExtraLightItalic.ttf */,
+				AC7075F2254EE0B700A9C35C /* Nunito-Italic.ttf */,
+				AC7075FD254EE0B700A9C35C /* Nunito-Light.ttf */,
+				AC7075F8254EE0B700A9C35C /* Nunito-LightItalic.ttf */,
+				AC7075F7254EE0B700A9C35C /* Nunito-Regular.ttf */,
+				AC7075FC254EE0B700A9C35C /* Nunito-SemiBold.ttf */,
+				AC7075F1254EE0B700A9C35C /* Nunito-SemiBoldItalic.ttf */,
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AC7075C8254E78C500A9C35C /* Dozee Demo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AC7075DD254E78C900A9C35C /* Build configuration list for PBXNativeTarget "Dozee Demo" */;
+			buildPhases = (
+				AC7075C5254E78C500A9C35C /* Sources */,
+				AC7075C6254E78C500A9C35C /* Frameworks */,
+				AC7075C7254E78C500A9C35C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Dozee Demo";
+			productName = "Dozee Demo";
+			productReference = AC7075C9254E78C500A9C35C /* Dozee Demo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AC7075C1254E78C500A9C35C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1200;
+				LastUpgradeCheck = 1200;
+				TargetAttributes = {
+					AC7075C8254E78C500A9C35C = {
+						CreatedOnToolsVersion = 12.0.1;
+					};
+				};
+			};
+			buildConfigurationList = AC7075C4254E78C500A9C35C /* Build configuration list for PBXProject "Dozee Demo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AC7075C0254E78C500A9C35C;
+			productRefGroup = AC7075CA254E78C500A9C35C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AC7075C8254E78C500A9C35C /* Dozee Demo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AC7075C7254E78C500A9C35C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC707605254EE0B700A9C35C /* Nunito-Regular.ttf in Resources */,
+				AC7075E2254E78DB00A9C35C /* Alpha_5.json in Resources */,
+				AC707607254EE0B700A9C35C /* Nunito-Bold.ttf in Resources */,
+				AC707604254EE0B700A9C35C /* Nunito-ExtraBoldItalic.ttf in Resources */,
+				AC707600254EE0B700A9C35C /* Nunito-Italic.ttf in Resources */,
+				AC707601254EE0B700A9C35C /* Nunito-BoldItalic.ttf in Resources */,
+				AC707602254EE0B700A9C35C /* Nunito-ExtraLightItalic.ttf in Resources */,
+				AC7075D4254E78C900A9C35C /* Preview Assets.xcassets in Resources */,
+				AC70760A254EE0B700A9C35C /* Nunito-SemiBold.ttf in Resources */,
+				AC7075D1254E78C900A9C35C /* Assets.xcassets in Resources */,
+				AC707609254EE0B700A9C35C /* Nunito-ExtraLight.ttf in Resources */,
+				AC7075FF254EE0B700A9C35C /* Nunito-SemiBoldItalic.ttf in Resources */,
+				AC7075FE254EE0B700A9C35C /* Nunito-BlackItalic.ttf in Resources */,
+				AC707606254EE0B700A9C35C /* Nunito-LightItalic.ttf in Resources */,
+				AC707603254EE0B700A9C35C /* Nunito-Black.ttf in Resources */,
+				AC70760B254EE0B700A9C35C /* Nunito-Light.ttf in Resources */,
+				AC707608254EE0B700A9C35C /* Nunito-ExtraBold.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AC7075C5254E78C500A9C35C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC707611254F200900A9C35C /* ProfileView.swift in Sources */,
+				AC7075D6254E78C900A9C35C /* Persistence.swift in Sources */,
+				AC7075CF254E78C500A9C35C /* ContentView.swift in Sources */,
+				AC7075ED254E794400A9C35C /* DashboardViewModel.swift in Sources */,
+				AC707614254F257800A9C35C /* CategoryPickerView.swift in Sources */,
+				AC7075D9254E78C900A9C35C /* Dozee_Demo.xcdatamodeld in Sources */,
+				AC7075CD254E78C500A9C35C /* Dozee_DemoApp.swift in Sources */,
+				AC70760E254EF14700A9C35C /* Dashboard.swift in Sources */,
+				AC7075E9254E792B00A9C35C /* CardView.swift in Sources */,
+				ACF38BDB254FA643004C74D1 /* Data.swift in Sources */,
+				AC707617254F724B00A9C35C /* CustomCalendarView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		AC7075DB254E78C900A9C35C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AC7075DC254E78C900A9C35C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AC7075DE254E78C900A9C35C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Dozee Demo/Preview Content\"";
+				DEVELOPMENT_TEAM = 898D22Z9A6;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "Dozee Demo/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Mohd-Mugish.Dozee-Demo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AC7075DF254E78C900A9C35C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Dozee Demo/Preview Content\"";
+				DEVELOPMENT_TEAM = 898D22Z9A6;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "Dozee Demo/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Mohd-Mugish.Dozee-Demo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AC7075C4254E78C500A9C35C /* Build configuration list for PBXProject "Dozee Demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AC7075DB254E78C900A9C35C /* Debug */,
+				AC7075DC254E78C900A9C35C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AC7075DD254E78C900A9C35C /* Build configuration list for PBXNativeTarget "Dozee Demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AC7075DE254E78C900A9C35C /* Debug */,
+				AC7075DF254E78C900A9C35C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		AC7075D7254E78C900A9C35C /* Dozee_Demo.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				AC7075D8254E78C900A9C35C /* Dozee_Demo.xcdatamodel */,
+			);
+			currentVersion = AC7075D8254E78C900A9C35C /* Dozee_Demo.xcdatamodel */;
+			path = Dozee_Demo.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = AC7075C1254E78C500A9C35C /* Project object */;
+}
