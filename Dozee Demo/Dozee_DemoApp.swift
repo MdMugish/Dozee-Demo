@@ -13,9 +13,9 @@ struct Dozee_DemoApp: App {
 
     var body: some Scene {
         WindowGroup {
-            Dashboard()
+            ContentView()
                 .environment(\.managedObjectContext, persistenceController.container.viewContext)
-                .onAppear(perform: UIApplication.shared.switchHostingController)
+//                .onAppear(perform: UIApplication.shared.switchHostingController)
                 
         }
         
@@ -24,17 +24,17 @@ struct Dozee_DemoApp: App {
     
 }
 
-class HostingController: UIHostingController<Dashboard> {
-    
-    override var preferredStatusBarStyle: UIStatusBarStyle {
-        return .lightContent
-    }
-}
-
-extension UIApplication {
-    func switchHostingController() {
-        windows.first?.rootViewController = HostingController(rootView: Dashboard()
-        )
-        
-    }
-}
+//class HostingController: UIHostingController<ContentView> {
+//
+//    override var preferredStatusBarStyle: UIStatusBarStyle {
+//        return .lightContent
+//    }
+//}
+//
+//extension UIApplication {
+//    func switchHostingController() {
+//        windows.first?.rootViewController = HostingController(rootView: ContentView()
+//        )
+//
+//    }
+//}

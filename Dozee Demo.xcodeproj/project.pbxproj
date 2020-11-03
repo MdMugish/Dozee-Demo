@@ -35,6 +35,12 @@
 		AC707614254F257800A9C35C /* CategoryPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC707613254F257800A9C35C /* CategoryPickerView.swift */; };
 		AC707617254F724B00A9C35C /* CustomCalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC707616254F724A00A9C35C /* CustomCalendarView.swift */; };
 		ACF38BDB254FA643004C74D1 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF38BDA254FA643004C74D1 /* Data.swift */; };
+		ACF6734A255132BE0063C382 /* DeocdeJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF67349255132BE0063C382 /* DeocdeJSON.swift */; };
+		ACF6734E255137500063C382 /* JSONDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF6734D255137500063C382 /* JSONDecoder.swift */; };
+		ACF67357255151810063C382 /* BloodPressureType+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF67355255151810063C382 /* BloodPressureType+CoreDataClass.swift */; };
+		ACF67358255151810063C382 /* BloodPressureType+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF67356255151810063C382 /* BloodPressureType+CoreDataProperties.swift */; };
+		ACF6735F255159CF0063C382 /* SampleDataTwo+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF6735D255159CF0063C382 /* SampleDataTwo+CoreDataClass.swift */; };
+		ACF67360255159CF0063C382 /* SampleDataTwo+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF6735E255159CF0063C382 /* SampleDataTwo+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -68,6 +74,12 @@
 		AC707613254F257800A9C35C /* CategoryPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryPickerView.swift; sourceTree = "<group>"; };
 		AC707616254F724A00A9C35C /* CustomCalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCalendarView.swift; sourceTree = "<group>"; };
 		ACF38BDA254FA643004C74D1 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		ACF67349255132BE0063C382 /* DeocdeJSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeocdeJSON.swift; sourceTree = "<group>"; };
+		ACF6734D255137500063C382 /* JSONDecoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONDecoder.swift; sourceTree = "<group>"; };
+		ACF67355255151810063C382 /* BloodPressureType+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BloodPressureType+CoreDataClass.swift"; sourceTree = "<group>"; };
+		ACF67356255151810063C382 /* BloodPressureType+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BloodPressureType+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		ACF6735D255159CF0063C382 /* SampleDataTwo+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SampleDataTwo+CoreDataClass.swift"; sourceTree = "<group>"; };
+		ACF6735E255159CF0063C382 /* SampleDataTwo+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SampleDataTwo+CoreDataProperties.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +112,7 @@
 		AC7075CB254E78C500A9C35C /* Dozee Demo */ = {
 			isa = PBXGroup;
 			children = (
+				ACF6734C2551373B0063C382 /* Extension */,
 				AC7075EF254EE01C00A9C35C /* Font */,
 				AC7075E7254E791300A9C35C /* Repo */,
 				AC7075E6254E790000A9C35C /* Model */,
@@ -147,6 +160,10 @@
 		AC7075E6254E790000A9C35C /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				ACF6735D255159CF0063C382 /* SampleDataTwo+CoreDataClass.swift */,
+				ACF6735E255159CF0063C382 /* SampleDataTwo+CoreDataProperties.swift */,
+				ACF67355255151810063C382 /* BloodPressureType+CoreDataClass.swift */,
+				ACF67356255151810063C382 /* BloodPressureType+CoreDataProperties.swift */,
 				ACF38BDA254FA643004C74D1 /* Data.swift */,
 			);
 			path = Model;
@@ -156,6 +173,7 @@
 			isa = PBXGroup;
 			children = (
 				AC7075E1254E78DB00A9C35C /* Alpha_5.json */,
+				ACF67349255132BE0063C382 /* DeocdeJSON.swift */,
 			);
 			path = Repo;
 			sourceTree = "<group>";
@@ -179,6 +197,14 @@
 				AC7075F1254EE0B700A9C35C /* Nunito-SemiBoldItalic.ttf */,
 			);
 			path = Font;
+			sourceTree = "<group>";
+		};
+		ACF6734C2551373B0063C382 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				ACF6734D255137500063C382 /* JSONDecoder.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -266,16 +292,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				AC707611254F200900A9C35C /* ProfileView.swift in Sources */,
+				ACF6734E255137500063C382 /* JSONDecoder.swift in Sources */,
 				AC7075D6254E78C900A9C35C /* Persistence.swift in Sources */,
 				AC7075CF254E78C500A9C35C /* ContentView.swift in Sources */,
 				AC7075ED254E794400A9C35C /* DashboardViewModel.swift in Sources */,
 				AC707614254F257800A9C35C /* CategoryPickerView.swift in Sources */,
+				ACF6735F255159CF0063C382 /* SampleDataTwo+CoreDataClass.swift in Sources */,
 				AC7075D9254E78C900A9C35C /* Dozee_Demo.xcdatamodeld in Sources */,
+				ACF6734A255132BE0063C382 /* DeocdeJSON.swift in Sources */,
 				AC7075CD254E78C500A9C35C /* Dozee_DemoApp.swift in Sources */,
 				AC70760E254EF14700A9C35C /* Dashboard.swift in Sources */,
 				AC7075E9254E792B00A9C35C /* CardView.swift in Sources */,
 				ACF38BDB254FA643004C74D1 /* Data.swift in Sources */,
 				AC707617254F724B00A9C35C /* CustomCalendarView.swift in Sources */,
+				ACF67357255151810063C382 /* BloodPressureType+CoreDataClass.swift in Sources */,
+				ACF67360255159CF0063C382 /* SampleDataTwo+CoreDataProperties.swift in Sources */,
+				ACF67358255151810063C382 /* BloodPressureType+CoreDataProperties.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

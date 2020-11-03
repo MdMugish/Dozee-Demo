@@ -10,49 +10,58 @@ import CoreData
 
 struct ContentView: View {
     @Environment(\.managedObjectContext) private var viewContext
-
+//    var viewContext = PersistenceController.shared.container.viewContext
+    @StateObject var vm = DeocdeJSONAction()
     @FetchRequest(
-        sortDescriptors: [NSSortDescriptor(keyPath: \Item.timestamp, ascending: true)],
+        sortDescriptors: [NSSortDescriptor(keyPath: \SampleDataTwo.time, ascending: true)],
         animation: .default)
-    private var items: FetchedResults<Item>
+    private var data: FetchedResults<SampleDataTwo>
 
     var body: some View {
-        List {
-            ForEach(items) { item in
-                Text("Item at \(item.timestamp!, formatter: itemFormatter)")
+        VStack{
+            List {
+                Text("Hola")
+                ForEach(data) { item in
+                    VStack{
+                        Text("BP Diastole at \(item.bloodPressure!.diastole)")
+                        Text("BP Systole at \(item.bloodPressure!.systole)")
+                    }
+                }
+                .onDelete(perform: deleteItems)
             }
-            .onDelete(perform: deleteItems)
+            
+            Button(action : {
+                
+                let newItem = SampleDataTwo(context: viewContext)
+                newItem.heartRate = 78
+                newItem.bloodPressure = BloodPressureType(context: viewContext)
+                newItem.bloodPressure!.diastole = 99
+                newItem.bloodPressure!.systole = 33
+                
+                do {
+                    try viewContext.save()
+                } catch {
+                    print("Error while saving the data")
+                }
+                
+            }){
+                Text("ADD Item")
+            }
         }
         .toolbar {
             #if os(iOS)
             EditButton()
             #endif
 
-            Button(action: addItem) {
-                Label("Add Item", systemImage: "plus")
-            }
+      
         }
     }
 
-    private func addItem() {
-        withAnimation {
-            let newItem = Item(context: viewContext)
-            newItem.timestamp = Date()
 
-            do {
-                try viewContext.save()
-            } catch {
-                // Replace this implementation with code to handle the error appropriately.
-                // fatalError() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development.
-                let nsError = error as NSError
-                fatalError("Unresolved error \(nsError), \(nsError.userInfo)")
-            }
-        }
-    }
 
     private func deleteItems(offsets: IndexSet) {
         withAnimation {
-            offsets.map { items[$0] }.forEach(viewContext.delete)
+            offsets.map { data[$0] }.forEach(viewContext.delete)
 
             do {
                 try viewContext.save()

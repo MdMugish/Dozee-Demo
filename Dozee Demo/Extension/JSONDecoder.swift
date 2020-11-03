@@ -1,0 +1,355 @@
+
+import Foundation
+import CoreData
+
+/*,
+ 
+ {
+     "HeartRate": 42,
+     "BreathRate": 17,
+     "O2": 99,
+     "Blood Pressure": {
+         "Systole": 100,
+         "Diastole": 97
+     },
+     "Recovery": 59,
+     "sleepscore": 92,
+     "time": 1596421800
+ },
+ 
+ {
+     "HeartRate": 98,
+     "BreathRate": 17,
+     "O2": 96,
+     "Blood Pressure": {
+         "Systole": 116,
+         "Diastole": 82
+     },
+     "Recovery": 161,
+     "sleepscore": 81,
+     "time": 1596594600
+ },
+ {
+     "HeartRate": 83,
+     "BreathRate": 22,
+     "O2": 95,
+     "Blood Pressure": {
+         
+     },
+     "Recovery": 111,
+     "sleepscore": 47,
+     "time": 1596681000
+ },
+ {
+     "HeartRate": 89,
+     
+     "O2": 98,
+     "Blood Pressure": {
+         "Systole": 85,
+         "Diastole": 69
+     },
+     "Recovery": 183,
+     "sleepscore": 71,
+     "time": 1596767400
+ },
+ {
+     
+     "BreathRate": 18,
+     "O2": 98,
+     "Blood Pressure": {
+         "Systole": 113,
+         "Diastole": 88
+     },
+     "Recovery": 165,
+     "sleepscore": 79,
+     "time": 1596853800
+ },
+ {
+     "HeartRate": 78,
+     "BreathRate": 20,
+     "O2": 95,
+     "Blood Pressure": {
+         "Systole": 137,
+         "Diastole": 98
+     },
+     "Recovery": 135,
+     "sleepscore": 84,
+     "time": 1596940200
+ },
+ {
+     "HeartRate": -1,
+     "BreathRate": 14,
+     "O2": 95,
+     "Blood Pressure": {
+         "Systole": 105,
+         "Diastole": 73
+     },
+     "Recovery": 153,
+     "sleepscore": 97,
+     "time": 1597026600
+ },
+ {
+     "HeartRate": 99,
+     "BreathRate": 20,
+     "O2": 99,
+     "Blood Pressure": {
+         
+         "Diastole": 60
+     },
+     "Recovery": -1,
+     "sleepscore": 93,
+     "time": 1597113000
+ },
+ {"HeartRate": 90, "BreathRate": 8, "O2": 95, "BP": {"Systole": 95, "Diastole": 63}, "Recovery": 143, "sleepscore": 75,
+     "time": 1594650600}, {"HeartRate": 84, "BreathRate": 13, "O2": 96, "BP": {"Systole": 94, "Diastole": 76}, "Recovery":
+         148, "sleepscore": 68, "time": 1594737000}, {"HeartRate": 83, "BreathRate": 15, "O2": 99, "BP": {"Systole": 65,
+             "Diastole": 62}, "Recovery": 88, "sleepscore": 91, "time": 1594823400}, {"HeartRate": 46, "BreathRate": 15, "O2": 99,
+                 "BP": {"Systole": 112, "Diastole": 93}, "Recovery": 96, "sleepscore": 76, "time": 1594909800}, {"HeartRate": 94,
+                     "BreathRate": 13, "O2": 96, "BP": {"Systole": 114, "Diastole": 94}, "Recovery": 85, "sleepscore": 65, "time":
+                 1594996200}, {"HeartRate": 43, "BreathRate": 13, "O2": 99, "BP": {"Systole": 71, "Diastole": 65}, "Recovery": 86,
+                     "sleepscore": 96, "time": 1595082600}, {"HeartRate": 85, "BreathRate": 20, "O2": 98, "BP": {"Systole": 76, "Diastole":
+                     63}, "Recovery": 143, "sleepscore": 60, "time": 1595169000}, {"HeartRate": 64, "BreathRate": 13, "O2": 99, "BP":
+                         {"Systole": 74, "Diastole": 64}, "Recovery": 161, "sleepscore": 87, "time": 1595255400}, {"HeartRate": 44, "BreathRate":
+                             13, "O2": 98, "BP": {"Systole": 82, "Diastole": 75}, "Recovery": 60, "sleepscore": 82, "time": 1595341800},
+                         {"HeartRate": 48, "BreathRate": 21, "O2": 97, "BP": {"Systole": 81, "Diastole": 64}, "Recovery": 94, "sleepscore": 63,
+                             "time": 1595428200},
+                         {
+                             "HeartRate": 66,
+                             "BreathRate": 20,
+                             "O2": 98,
+                             "Blood Pressure": {
+                                 "Systole": 90
+                                 
+                             },
+                             "Recovery": 182,
+                             "sleepscore": 84,
+                             "time": 1597199400
+                         },
+                         {
+                             "HeartRate": 80,
+                             "BreathRate": 21,
+                             "O2": 99,
+                             "Blood Pressure": {
+                                 
+                             },
+                             "Recovery": 140,
+                             "sleepscore": 59,
+                             "time": 1597285800
+                         },
+                         {
+                             "HeartRate": 97,
+                             "BreathRate": 22,
+                             "O2": 98,
+                             
+                             "Recovery": 176,
+                             "sleepscore": 76,
+                             "time": 1597372200
+                         },
+                         {
+                             "HeartRate": -1,
+                             "BreathRate": -1,
+                             "O2": -1,
+                             "Blood Pressure": {
+                                 "Systole": 103,
+                                 "Diastole": 92
+                             },
+                             "Recovery": 183,
+                             "sleepscore": 94,
+                             "time": 1597458600
+                         },
+                         {
+                             "HeartRate": 67,
+                             "BreathRate": 20,
+                             "O2": 95,
+                             "Blood Pressure": {
+                                 "Systole": 111,
+                                 "Diastole": 76
+                             },
+                             "Recovery": 190,
+                             "sleepscore": 99,
+                             "time": 1597545000
+                         },
+                         {
+                             "HeartRate": 93,
+                             "BreathRate": 8,
+                             "O2": 97,
+                             "Blood Pressure": {
+                                 "Systole": 76,
+                                 "Diastole": 69
+                             },
+                             "Recovery": 137,
+                             "sleepscore": 66,
+                             "time": 1597631400
+                         },
+                         {
+                             
+                         },
+                         {
+                             "HeartRate": 95,
+                             "BreathRate": 23,
+                             "O2": 98,
+                             "Blood Pressure": {
+                                 "Systole": 78,
+                                 "Diastole": 67
+                             },
+                             "Recovery": 112,
+                             "sleepscore": 84,
+                             "time": 1597804200
+                         },
+                         {
+                             "HeartRate": 53,
+                             "BreathRate": 21,
+                             "O2": 95,
+                             "Blood Pressure": {
+                                 "Systole": 91,
+                                 "Diastole": 75
+                             },
+                             "Recovery": 51,
+                             "sleepscore": 91,
+                             "time": 1597890600
+                         },
+                         {
+                             "HeartRate": 69,
+                             "BreathRate": 14,
+                             "O2": 97,
+                             "Blood Pressure": {
+                                 "Systole": 121,
+                                 "Diastole": 88
+                             },
+                             "Recovery": 109,
+                             "sleepscore": 70,
+                             "time": 1597977000
+                         },
+                         {
+                             "HeartRate": 71,
+                             "BreathRate": 19,
+                             "O2": 95,
+                             "Blood Pressure": {
+                                 "Systole": 135,
+                                 "Diastole": 98
+                             },
+                             "Recovery": 89,
+                             "sleepscore": 56,
+                             "time": 1598063400
+                         },
+                         {
+                             "HeartRate": 74,
+                             "BreathRate": 8,
+                             "O2": 95,
+                             "Blood Pressure": {
+                                 "Systole": 76,
+                                 "Diastole": 71
+                             },
+                             "Recovery": 121,
+                             "sleepscore": 60,
+                             "time": 1598149800
+                         },
+                         {
+                             "HeartRate": 60,
+                             "BreathRate": 17,
+                             "O2": 96,
+                             "Blood Pressure": {
+                                 "Systole": 136,
+                                 "Diastole": 99
+                             },
+                             "Recovery": 83,
+                             "sleepscore": 78,
+                             "time": 1598236200
+                         },
+                         {
+                             "HeartRate": 42,
+                             "BreathRate": 11,
+                             "O2": 96,
+                             "Blood Pressure": {
+                                 "Systole": 104,
+                                 "Diastole": 98
+                             },
+                             "Recovery": 95,
+                             "sleepscore": 48,
+                             "time": 1598322600
+                         },
+                         {
+                             "HeartRate": 49,
+                             "BreathRate": 12,
+                             "O2": 95,
+                             "Blood Pressure": {
+                                 "Systole": 93,
+                                 "Diastole": 92
+                             },
+                             "Recovery": 90,
+                             "sleepscore": 95,
+                             "time": 1598409000
+                         },
+                         {
+                             "HeartRate": 97,
+                             "BreathRate": 23,
+                             "O2": 99,
+                             "Blood Pressure": {
+                                 "Systole": 78,
+                                 "Diastole": 60
+                             },
+                             "Recovery": 67,
+                             "sleepscore": 53,
+                             "time": 1598495400
+                         },
+                         {
+                             "HeartRate": 98,
+                             "BreathRate": 10,
+                             "O2": 97,
+                             "Blood Pressure": {
+                                 "Systole": 101,
+                                 "Diastole": 74
+                             },
+                             "Recovery": 74,
+                             "sleepscore": 86,
+                             "time": 1598581800
+                         },
+                         {
+                             "HeartRate": 59,
+                             "BreathRate": 12,
+                             "O2": 97,
+                             "Blood Pressure": {
+                                 "Systole": 100,
+                                 "Diastole": 82
+                             },
+                             "Recovery": 153,
+                             "sleepscore": 60,
+                             "time": 1598668200
+                         },
+                         {
+                             "HeartRate": 71,
+                             "BreathRate": 19,
+                             "O2": 98,
+                             "Blood Pressure": {
+                                 "Systole": 114,
+                                 "Diastole": 90
+                             },
+                             "Recovery": 80,
+                             "sleepscore": 57,
+                             "time": 1598754600
+                         },
+                         {
+                             "HeartRate": 92,
+                             "BreathRate": 9,
+                             "O2": 95,
+                             "Blood Pressure": {
+                                 "Systole": 96,
+                                 "Diastole": 70
+                             },
+                             "Recovery": 116,
+                             "sleepscore": 91,
+                             "time": 1598841000
+                         },
+                         {"HeartRate": 41, "BreathRate": 18, "O2": 98, "BP": {"Systole": 75, "Diastole": 67}, "Recovery": 162, "sleepscore": 76,
+                             "time": 1598970600}, {"HeartRate": 70, "BreathRate": 10, "O2": 95, "BP": {"Systole": 81, "Diastole": 75}, "Recovery":
+                                 135, "sleepscore": 99, "time": 1599057000}, {"HeartRate": 54, "BreathRate": 14, "O2": 98, "BP": {"Systole": 113,
+                                     "Diastole": 84}, "Recovery": 111, "sleepscore": 60, "time": 1599143400}, {"HeartRate": 95, "BreathRate": 8, "O2": 97,
+                                         "BP": {"Systole": 107, "Diastole": 77}, "Recovery": 88, "sleepscore": 60, "time": 1599229800}, {"HeartRate": 47,
+                                             "BreathRate": 11, "O2": 96, "BP": {"Systole": 102, "Diastole": 74}, "Recovery": 108, "sleepscore": 73, "time":
+                                         1599316200}, {"HeartRate": 68, "BreathRate": 8, "O2": 99, "BP": {"Systole": 97, "Diastole": 83}, "Recovery": 164,
+                                             "sleepscore": 52, "time": 1599402600}, {"HeartRate": 69, "BreathRate": 14, "O2": 99, "BP": {"Systole": 116, "Diastole":
+                                             88}, "Recovery": 174, "sleepscore": 76, "time": 1599489000}, {"HeartRate": 85, "BreathRate": 16, "O2": 98, "BP":
+                                                 {"Systole": 112, "Diastole": 97}, "Recovery": 187, "sleepscore": 94, "time": 1599575400}, {"HeartRate": 41,
+                                                     "BreathRate": 17, "O2": 97, "BP": {"Systole": 87, "Diastole": 66}, "Recovery": 185, "sleepscore": 70, "time":
+                                                 1599661800}, {"HeartRate": 75, "BreathRate": 9, "O2": 98, "BP": {"Systole": 101, "Diastole": 97}, "Recovery": 100,
+                                                     "sleepscore": 79, "time": 1599748200}*/

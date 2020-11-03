@@ -14,7 +14,11 @@ class DashboardViewModel : ObservableObject{
     @Published var categoryOptions : CategoryType = .Daily
     
     
+    init(){
+        print("DashboardViewModel Init")
+        
     
+    }
     
 }
 
