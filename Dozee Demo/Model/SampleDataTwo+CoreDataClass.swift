@@ -84,6 +84,14 @@ public class SampleDataTwo: NSManagedObject, Codable {
             print("Time not found")
         }
         
+        
+        
+        do{
+            recovery = try Int32(values.decode(Int.self, forKey : .recovery))
+        }catch{
+            print("recovery not found")
+           
+        }
     }
     
     

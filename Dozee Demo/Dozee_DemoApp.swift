@@ -6,14 +6,27 @@
 //
 
 import SwiftUI
+import CoreData
 
 @main
 struct Dozee_DemoApp: App {
-    let persistenceController = PersistenceController.shared
 
+
+    let persistenceController = PersistenceController.shared
+    @StateObject var dashboardVM : DashboardViewModel
+    
+    init(){
+        let managedObjectContext = persistenceController.container.viewContext
+        let storage = DashboardViewModel(viewContext: managedObjectContext)
+        self._dashboardVM = StateObject(wrappedValue: storage)
+    }
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            Dashboard(dashboardVM: dashboardVM)
+                .onAppear(perform: {
+                    Api().getPosts()
+                })
                 .environment(\.managedObjectContext, persistenceController.container.viewContext)
 //                .onAppear(perform: UIApplication.shared.switchHostingController)
                 

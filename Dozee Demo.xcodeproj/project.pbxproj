@@ -7,8 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AC1D7D882552553F00343C81 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC1D7D872552553F00343C81 /* Utils.swift */; };
+		AC5E634F2552C97900052321 /* ShareDataSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5E634E2552C97900052321 /* ShareDataSheetView.swift */; };
+		AC5E63532552DA8400052321 /* View+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5E63522552DA8400052321 /* View+Extension.swift */; };
 		AC7075CD254E78C500A9C35C /* Dozee_DemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC7075CC254E78C500A9C35C /* Dozee_DemoApp.swift */; };
-		AC7075CF254E78C500A9C35C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC7075CE254E78C500A9C35C /* ContentView.swift */; };
 		AC7075D1254E78C900A9C35C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC7075D0254E78C900A9C35C /* Assets.xcassets */; };
 		AC7075D4254E78C900A9C35C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC7075D3254E78C900A9C35C /* Preview Assets.xcassets */; };
 		AC7075D6254E78C900A9C35C /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC7075D5254E78C900A9C35C /* Persistence.swift */; };
@@ -34,8 +36,8 @@
 		AC707611254F200900A9C35C /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC707610254F200900A9C35C /* ProfileView.swift */; };
 		AC707614254F257800A9C35C /* CategoryPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC707613254F257800A9C35C /* CategoryPickerView.swift */; };
 		AC707617254F724B00A9C35C /* CustomCalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC707616254F724A00A9C35C /* CustomCalendarView.swift */; };
-		ACF38BDB254FA643004C74D1 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF38BDA254FA643004C74D1 /* Data.swift */; };
-		ACF6734A255132BE0063C382 /* DeocdeJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF67349255132BE0063C382 /* DeocdeJSON.swift */; };
+		ACF38BDB254FA643004C74D1 /* DateDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF38BDA254FA643004C74D1 /* DateDataModel.swift */; };
+		ACF6734A255132BE0063C382 /* Api+Local.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF67349255132BE0063C382 /* Api+Local.swift */; };
 		ACF6734E255137500063C382 /* JSONDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF6734D255137500063C382 /* JSONDecoder.swift */; };
 		ACF67357255151810063C382 /* BloodPressureType+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF67355255151810063C382 /* BloodPressureType+CoreDataClass.swift */; };
 		ACF67358255151810063C382 /* BloodPressureType+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF67356255151810063C382 /* BloodPressureType+CoreDataProperties.swift */; };
@@ -44,9 +46,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AC1D7D872552553F00343C81 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		AC5E634E2552C97900052321 /* ShareDataSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareDataSheetView.swift; sourceTree = "<group>"; };
+		AC5E63522552DA8400052321 /* View+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extension.swift"; sourceTree = "<group>"; };
 		AC7075C9254E78C500A9C35C /* Dozee Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Dozee Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC7075CC254E78C500A9C35C /* Dozee_DemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dozee_DemoApp.swift; sourceTree = "<group>"; };
-		AC7075CE254E78C500A9C35C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		AC7075D0254E78C900A9C35C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AC7075D3254E78C900A9C35C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		AC7075D5254E78C900A9C35C /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
@@ -73,8 +77,8 @@
 		AC707610254F200900A9C35C /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		AC707613254F257800A9C35C /* CategoryPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryPickerView.swift; sourceTree = "<group>"; };
 		AC707616254F724A00A9C35C /* CustomCalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCalendarView.swift; sourceTree = "<group>"; };
-		ACF38BDA254FA643004C74D1 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
-		ACF67349255132BE0063C382 /* DeocdeJSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeocdeJSON.swift; sourceTree = "<group>"; };
+		ACF38BDA254FA643004C74D1 /* DateDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateDataModel.swift; sourceTree = "<group>"; };
+		ACF67349255132BE0063C382 /* Api+Local.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Api+Local.swift"; sourceTree = "<group>"; };
 		ACF6734D255137500063C382 /* JSONDecoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONDecoder.swift; sourceTree = "<group>"; };
 		ACF67355255151810063C382 /* BloodPressureType+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BloodPressureType+CoreDataClass.swift"; sourceTree = "<group>"; };
 		ACF67356255151810063C382 /* BloodPressureType+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BloodPressureType+CoreDataProperties.swift"; sourceTree = "<group>"; };
@@ -119,12 +123,11 @@
 				AC7075E5254E78FB00A9C35C /* ViewModel */,
 				AC7075E4254E78F600A9C35C /* View */,
 				AC7075CC254E78C500A9C35C /* Dozee_DemoApp.swift */,
-				AC7075CE254E78C500A9C35C /* ContentView.swift */,
 				AC7075D0254E78C900A9C35C /* Assets.xcassets */,
 				AC7075D5254E78C900A9C35C /* Persistence.swift */,
 				AC7075DA254E78C900A9C35C /* Info.plist */,
-				AC7075D7254E78C900A9C35C /* Dozee_Demo.xcdatamodeld */,
 				AC7075D2254E78C900A9C35C /* Preview Content */,
+				AC1D7D872552553F00343C81 /* Utils.swift */,
 			);
 			path = "Dozee Demo";
 			sourceTree = "<group>";
@@ -145,6 +148,7 @@
 				AC707610254F200900A9C35C /* ProfileView.swift */,
 				AC707613254F257800A9C35C /* CategoryPickerView.swift */,
 				AC707616254F724A00A9C35C /* CustomCalendarView.swift */,
+				AC5E634E2552C97900052321 /* ShareDataSheetView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -160,11 +164,12 @@
 		AC7075E6254E790000A9C35C /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				AC7075D7254E78C900A9C35C /* Dozee_Demo.xcdatamodeld */,
 				ACF6735D255159CF0063C382 /* SampleDataTwo+CoreDataClass.swift */,
 				ACF6735E255159CF0063C382 /* SampleDataTwo+CoreDataProperties.swift */,
 				ACF67355255151810063C382 /* BloodPressureType+CoreDataClass.swift */,
 				ACF67356255151810063C382 /* BloodPressureType+CoreDataProperties.swift */,
-				ACF38BDA254FA643004C74D1 /* Data.swift */,
+				ACF38BDA254FA643004C74D1 /* DateDataModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -173,7 +178,7 @@
 			isa = PBXGroup;
 			children = (
 				AC7075E1254E78DB00A9C35C /* Alpha_5.json */,
-				ACF67349255132BE0063C382 /* DeocdeJSON.swift */,
+				ACF67349255132BE0063C382 /* Api+Local.swift */,
 			);
 			path = Repo;
 			sourceTree = "<group>";
@@ -203,6 +208,7 @@
 			isa = PBXGroup;
 			children = (
 				ACF6734D255137500063C382 /* JSONDecoder.swift */,
+				AC5E63522552DA8400052321 /* View+Extension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -291,19 +297,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC5E634F2552C97900052321 /* ShareDataSheetView.swift in Sources */,
 				AC707611254F200900A9C35C /* ProfileView.swift in Sources */,
+				AC5E63532552DA8400052321 /* View+Extension.swift in Sources */,
 				ACF6734E255137500063C382 /* JSONDecoder.swift in Sources */,
 				AC7075D6254E78C900A9C35C /* Persistence.swift in Sources */,
-				AC7075CF254E78C500A9C35C /* ContentView.swift in Sources */,
 				AC7075ED254E794400A9C35C /* DashboardViewModel.swift in Sources */,
 				AC707614254F257800A9C35C /* CategoryPickerView.swift in Sources */,
 				ACF6735F255159CF0063C382 /* SampleDataTwo+CoreDataClass.swift in Sources */,
 				AC7075D9254E78C900A9C35C /* Dozee_Demo.xcdatamodeld in Sources */,
-				ACF6734A255132BE0063C382 /* DeocdeJSON.swift in Sources */,
+				ACF6734A255132BE0063C382 /* Api+Local.swift in Sources */,
 				AC7075CD254E78C500A9C35C /* Dozee_DemoApp.swift in Sources */,
 				AC70760E254EF14700A9C35C /* Dashboard.swift in Sources */,
+				AC1D7D882552553F00343C81 /* Utils.swift in Sources */,
 				AC7075E9254E792B00A9C35C /* CardView.swift in Sources */,
-				ACF38BDB254FA643004C74D1 /* Data.swift in Sources */,
+				ACF38BDB254FA643004C74D1 /* DateDataModel.swift in Sources */,
 				AC707617254F724B00A9C35C /* CustomCalendarView.swift in Sources */,
 				ACF67357255151810063C382 /* BloodPressureType+CoreDataClass.swift in Sources */,
 				ACF67360255159CF0063C382 /* SampleDataTwo+CoreDataProperties.swift in Sources */,
